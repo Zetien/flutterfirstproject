@@ -6,10 +6,10 @@ class HomeView extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 242, 75, 4),
-        title: Text("Zetien App"),
+        backgroundColor: const Color.fromARGB(255, 242, 75, 4),
+        title: const Text("Zetien App"),
       ),
-      body: Center(
+      body: const Center(
         child: Text(
           "Zetien's, Bio",
           style: TextStyle(color: Colors.white, fontSize: 20),

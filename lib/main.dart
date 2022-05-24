@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:projectzetientest/view/home_view.dart';
-import 'package:projectzetientest/view/cellphone.dart';
+import 'package:projectzetientest/view/color_change.dart';
+import 'package:projectzetientest/view/imagen_test.dart';
 
 
 void main(){

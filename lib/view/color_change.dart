@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 
-class MyCellphone extends StatelessWidget {
-  const MyCellphone({Key? key}) : super(key: key);
+class MyColorChange extends StatelessWidget {
+  const MyColorChange({Key? key}) : super(key: key);
 
 // This widget is the root of your application.
   @override
@@ -11,7 +11,7 @@ class MyCellphone extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
 
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
       ),
       home: const MyHomePage(title: 'Zetien Demo'),
     );
