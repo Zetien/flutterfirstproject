@@ -47,7 +47,7 @@ class _Contador2State extends State<Contador2> {
             Text('$count', style: sizeTextColorB),
           ],
         )),
-        
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         floatingActionButton: FloatingCustomButonGroup(
             increase: incrementarValor,
             decrease: decrementarValor,
