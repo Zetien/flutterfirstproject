@@ -10,13 +10,12 @@ class ImageMeme extends StatelessWidget {
         title: const Text("Zetien App"),
       ),
       body: Center(
-        child: Stack(
-          children: [
+        child: Stack(children: [
           Image.asset('assets/images/espera_meme.jpg'),
           Container(
             padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
             child: const Text(
-              "Zetien's, Bio",
+              "Zetien's, Funny Meme",
               style: TextStyle(color: Colors.white, fontSize: 20),
             ),
           ),
