@@ -30,11 +30,11 @@ class _Contador2State extends State<Contador2> {
 
   @override
   Widget build(BuildContext context) {
-    const sizeTextColorA = TextStyle(fontSize: 24, color: Colors.white);
+    const sizeTextColorA = TextStyle(fontSize: 24, color: Colors.black);
     const sizeTextColorB = TextStyle(fontSize: 24, color: Colors.red);
 
     return Scaffold(
-        backgroundColor: const Color.fromARGB(255, 3, 3, 3),
+        backgroundColor: Color.fromARGB(255, 255, 254, 254),
         appBar: AppBar(
           backgroundColor: const Color.fromARGB(255, 242, 75, 4),
           title: const Text("Contador"),
@@ -47,7 +47,7 @@ class _Contador2State extends State<Contador2> {
             Text('$count', style: sizeTextColorB),
           ],
         )),
-        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
         floatingActionButton: FloatingCustomButonGroup(
             increase: incrementarValor,
             decrease: decrementarValor,
@@ -71,21 +71,23 @@ class FloatingCustomButonGroup extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: <Widget>[
-        FloatingActionButton(
+        Expanded(
+            child: FloatingActionButton(
           backgroundColor: Colors.red,
           child: const Icon(Icons.exposure_plus_1),
           onPressed: () => increase(),
-        ),
+        )),
         FloatingActionButton(
           backgroundColor: Colors.red,
           child: const Icon(Icons.exposure_minus_1),
           onPressed: () => decrease(),
         ),
-        FloatingActionButton(
+        Expanded(
+            child: FloatingActionButton(
           backgroundColor: Colors.red,
           child: const Icon(Icons.refresh),
           onPressed: () => reset(),
-        ),
+        )),
       ],
     );
   }
